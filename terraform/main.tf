@@ -1,6 +1,12 @@
 # Copyright Amazon.com, Inc. or its affiliates. All rights reserved.
 # SPDX-License-Identifier: Apache-2.0
-#
+
+resource "null_resource" "placeholder" {
+  # Null resource that exists only to provision the workspace
+  # Allows the workspace to execute without requests
+  # Do not delete
+}
+
 # module "sandbox_account_01" {
 #   source = "./modules/aft-account-request"
 
